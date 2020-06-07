@@ -10,19 +10,48 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
 
-    <div class="jumbotron text-center">
-        <h1>
-            </p>
-            <img style="-webkit-user-select: none;margin: auto;cursor: zoom-in;" src="file:///Users/robertmccandless/Desktop/DU%20Boot%20camp/HW-Wireframe/77DC8B54-ACFE-489D-B8AB-417C3DF9C098_1_105_c.jpeg" width="200" height="200"> Robert McCandless </h1>
-        <p>Full Stack Developer</p>
-        <p><a href="mailto:rob@robmccandless.com"> email</a></p>
-    </div>
+
 
     <div class="container">
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Disabled</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="jumbotron text-center forest-gif">
+
+
+            <img style="-webkit-user-select: none;margin: auto;cursor: zoom-in;" src="file:///Users/robertmccandless/Desktop/DU%20Boot%20camp/HW-Wireframe/77DC8B54-ACFE-489D-B8AB-417C3DF9C098_1_105_c.jpeg" width="200" height="200">
+            <h1>Robert McCandless </h1>
+
+            <p>Full Stack Developer</p>
+            <p><a href="mailto:rob@robmccandless.com"> email</a></p>
+        </div>
+
+
         <div class="row">
             <div class="col-sm-4">
                 <h3>Work History</h3>
@@ -39,7 +68,7 @@
                 <p>Full Stack Web Developer</p>F
             </div>
 
-            <div id="portfolioCards" class="row">
+            <div id="portfolioCards" class="row justify-content-between">
 
 
 
@@ -287,13 +316,14 @@
 
         function createCard(data, target) {
             var card = `<div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="${data.img}" alt="Card image cap">
+            <div class="card-header" style="background-image:url(${data.img})"></div>
+                
                     <div class="card-body">
                         <h5 class="card-title">${data.title}
                         </h5>
                    
-                        <a target="_blank" href="${data.link}" class="btn btn-primary">Go somewhere</a>
-                        <a target="_blank" href="${data.gitHubLink}" class="btn btn-primary">Go somewhere</a>
+                        <a target="_blank" href="${data.link}" class="btn btn-primary">Go to App</a>
+                        <a target="_blank" href="${data.gitHubLink}" class="btn btn-primary">GitHub</a>
     
                     </div>
                 </div>`

@@ -1,34 +1,46 @@
 body {
-    width: 960px;
+    width: 100%;
     margin: auto;
-    font-family;
-    'arial',
-    'helvetica Neue',
-    Helvetica,
-    sans-serif;
-    color;
-    '#777' background: '#777' width: '960px' font-size: '18pm' Header, Nav, section, aside, and footer background: '#ebebeb'
+    font-family: 'arial', 'helvetica Neue', Helvetica, sans-serif;
+    color: '#777';
+    background: '#777';
+    width: '960px';
+    font-size: '18pm';
 }
 
 header {
-    Header,
-    Nav,
-    section,
-    aside,
-    and footer background: '#ebebeb'
+    background: '#ebebeb';
+}
+
+.forest-gif {
+    background-image: url(https://media.giphy.com/media/3o7TKVaf0pflGFzlzW/giphy.gif);
+    background-position: center;
+    background-size: cover;
 }
 
 article {
-    color: '#777'
+    color: '#777';
 }
 
 h1,
 p {
-    color: '#777' background: '#ebebeb' section {
-        section: 495px font-family: Georgia, 'Times New Roman', Times, serif;
-        font-size: 22px;
-    }
+    color: '#777';
+    background: '#ebebeb';
 }
 
+section {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 22px;
+}
 
+.card {
+    margin-top: 40px;
+}
+
+.card-header {
+    width: 100%;
+    height: 200px;
+    background-color: red;
+    background-position: center;
+    background-size: cover;
 }
